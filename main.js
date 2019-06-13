@@ -4,7 +4,7 @@ var http = require('http');
 // configure our HTTP server
 var server = http.createServer(function (request, response) {
   response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello getintodevops.com\n");
+  response.end("Welcome to FreddieMac Spinnaker POC by Pricing Devops Team\n This is a simple Node Js Application \n we'll be using a very basic example: a Hello World server written with Node.\n This is a Successful Response...Congrats\n");
 });
 
 // listen on localhost:8000
