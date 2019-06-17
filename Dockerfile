@@ -7,8 +7,8 @@ LABEL maintainer "freddie.devops@gmail.com"
 # set a health check
 HEALTHCHECK --interval=15s \
             --timeout=10s \
-            CMD curl -f http://127.0.0.1:8000
+            CMD curl -f http://127.0.0.1:8000 | exit 1
 
 # tell docker what port to expose
 EXPOSE 8000
-ENTRYPOINT ["/bin/sh", "-c"]
+CMD [ "npm", "start" ]
